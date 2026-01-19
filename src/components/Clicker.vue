@@ -5,11 +5,23 @@ const count = ref(0)
 
 <template>
   <div class="card">
-    <button type="button" @click="count++">
+        <button type="button" @click="count++">
       <img src="../assets/widekita.jpeg" alt="My wife that is very WIDE (my REAL wife is Ryo Yamada, sorry guys)">
-      {{ count }}</button>
+      </button>
+      <div>
+        {{ count }}
+      </div>
   </div>
 </template>
 
 <style scoped>
+  .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    align-items: center;
+  }
+  img {
+    max-width: 250px;
+  }
 </style>
